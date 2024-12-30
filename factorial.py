@@ -7,3 +7,6 @@ def factorial(n):
         fact = fact * i
     return fact    
 
+num = int(input("Enter the number to find factorial::"))
+
+print(factorial(num))
