@@ -5,6 +5,6 @@ def rectangle(lines):
         if i==1 or i== lines:
             print("*"*lines)
         else:
-            print("*"+" "*(lines-2)+" *")
+            print("*"+" "*(lines-2)+"*")
 
 rectangle(7)
