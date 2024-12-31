@@ -24,3 +24,6 @@ def find_longest_words(sentence):
     print("long word::", longest_word)
     print("long_non_p::", longest_non_palindrome)
 
+input_str = """A palindrome is a word  number phrase or other sequence of symbols that reads the same backwards as forwards such as the words madam or racecar or tattarrattat """
+
+find_longest_words(input_str)
