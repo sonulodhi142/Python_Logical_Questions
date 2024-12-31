@@ -6,3 +6,21 @@ def is_palindrome(word):
 
 
 
+def find_longest_words(sentence):
+    words = sentence.split()
+    
+    longest_word = ""
+    longest_non_palindrome = ""
+    
+    for word in words:
+        # Update the longest word
+        if len(word) > len(longest_word):
+            longest_word = word
+        
+        # Update the longest non-palindromic word
+        if not is_palindrome(word) and len(word) > len(longest_non_palindrome):
+            longest_non_palindrome = word
+            
+    print("long word::", longest_word)
+    print("long_non_p::", longest_non_palindrome)
+
