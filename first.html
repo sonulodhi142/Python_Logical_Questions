@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Transition Example</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #00bcd4;
+      border-radius: 10px;
+      transition: 
+        background-color 0.5s ease, 
+        transform 0.5s ease,
+        border-radius 0.5s ease;
+    }
+
+    .box:hover {
+      background-color: #ff4081;
+      transform: scale(1.2);
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"></div>
+  <h1>hello</h1>
+
+</body>
+</html>
